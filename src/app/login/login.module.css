@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: #F0F2F5;
     box-shadow: 0 0 5px 0px #888;
 }
 
@@ -349,6 +349,7 @@
     }
     .rightBox {
         box-shadow: none;
+        border-radius: none;
     }
     .textUp, .textMiddle {
         width: 90%;

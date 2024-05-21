@@ -128,7 +128,7 @@ export default function Profil() {
                                 )}
                                 {!profile?.cover && (
                                     <>
-                                        {/* <Image className={styles.imgCover} src={''} alt='Couverture' width={250} height={250} /> */}
+                                        <CoverPage url={'/hide-facebook-profile-picture-notification.jpg'} />
                                         {isUploading && (
                                             <div className={styles.containLoad}>
                                                 <div className={styles.load}>

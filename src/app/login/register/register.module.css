@@ -78,7 +78,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    background-color: #fff;
+    background-color: #F0F2F5;
     box-shadow: 0 0 5px 0px #888;
 }
 
@@ -268,6 +268,7 @@
     }
     .etape2RightBox {
         box-shadow: none;
+        border-radius: none;
     }
     .etape2Identifiant input {
         font-size: 14px;
