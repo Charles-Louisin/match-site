@@ -1,0 +1,305 @@
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.etape2Contain {
+    display: flex;
+    width: 70%;
+    height: fit-content;
+    /* background-color: rgba(255, 255, 0, 0.489); */
+    backdrop-filter: blur(5px);
+    border-radius: 10px 30px 30px 10px;
+}
+
+.etape2LeftBox {
+    height: 100%;
+    width: 45%;
+    margin: auto 0;
+    display: flex;
+    background-color: transparent;
+    padding-top: 10px;
+    gap: 90px;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: burlywood; */
+}
+
+.etape2AnimLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    /* background-color: green; */
+}
+.etape2Logo {
+    width: 150px;
+    height: 145px;
+    animation: App-logo-spin infinite 3s alternate;
+    /* border-radius: 30px; */
+    -webkit-animation: App-logo-spin infinite 3s alternate;
+}
+  @keyframes App-logo-spin {
+    from {
+      transform: translatex(-50px);
+}
+    to {
+      transform: translatex(50px);
+}
+}
+
+.etape2TextCarossel {
+    display: flex;
+    width: 85%;
+    height: fit-content;
+    /* background-color: red; */
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+.etape2TextCarossel h2 {
+    color: #050505;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.etape2TextCarossel h2 strong {
+    color: #0866FF;
+}
+
+
+.etape2RightBox {
+    height: fit-content;
+    padding-bottom: 40px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0px #888;
+}
+
+.etape2Etape {
+    pointer-events: none;
+    display: flex;
+    width: 30%;
+    height: fit-content;
+    /* background-color: blue; */
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.etape2Etape1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(205, 205, 4);
+    box-shadow: inset 0 0 10px 0 #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.etape2Etape2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /* background-color: rgb(205, 205, 4); */
+    box-shadow: inset 0 0 10px 0 #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.etape2TextEtape1 {
+    pointer-events: none;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: fit-content;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+}
+.etape2TextEtape1 h3 {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 5px;
+    color: #050505;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+}
+.etape2Identifiant {
+    width: 100%;
+    height: fit-content;
+    /* background-color: pink; */
+}
+.etape2Identifiant input {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    border: 1px solid #9999998c;
+    background-color: transparent;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.3s normal;
+    /* background-color: blue; */
+}
+.etape2Identifiant input:focus {
+    /* box-shadow: 0 0 5px 0 rgba(188, 188, 2, 0.838); */
+    background-color: #F0F2F5;
+    transition: 0.6s ease;
+    border: none;
+}
+.etape2Identifiant label {
+    /* padding: 16px; */
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #050505;
+    transition: 0.4s ease;
+}
+
+.divMarge {
+    margin-bottom: 10px;
+}
+
+.loginBtn {
+    /* background-color: red; */
+    width: fit-content;
+    height: fit-content;
+}
+.etape2Button {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    color: #050505;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 #00000068;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.2s linear;
+}
+.etape2Button:hover {
+    background-color: #F0F2F5;
+    box-shadow: 0 0 5px 0 #000000a8;
+    transition: 0.3s linear;
+    font-family: cursive;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+
+/* TODO: RESPONSIVE START */
+
+@media screen and (max-width: 1000px) {
+    .etape2Contain {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        height: fit-content;
+    }
+    
+    .etape2LeftBox {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        /* background-color: blue; */
+        gap: 30px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    .etape2TextCarossel {
+        display: flex;
+        justify-content: center;
+        /* margin-top: 10px; */
+        width: 100%;
+        /* background-color: red; */
+    }
+    .etape2RightBox {
+        height: fit-content;
+        padding-bottom: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        /* background-color: #fff; */
+        box-shadow: 0 0 5px 0px;
+    }
+    .etape2TextEtape1 h3 {
+        top: 260px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .etape2Contain {
+        width: 100%;
+    }
+    .etape2RightBox {
+        box-shadow: none;
+    }
+    .etape2Identifiant input {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .etape2TextEtape1 h3 {
+        top: 260px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .etape2TextEtape1 h3 {
+        top: 260px;
+    }
+    .etape2Etape {
+        width: 35%;
+    }
+    .etape2TextEtape1 {
+        width: 90%;
+    }
+    .etape2Identifiant input {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .etape2TextEtape1 h3 {
+        top: 296px;
+    }
+    .etape2Identifiant input {
+        font-size: 14px;
+    }
+}

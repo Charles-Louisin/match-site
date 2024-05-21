@@ -1,0 +1,173 @@
+
+.homeMain {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #F0F2F5;
+}
+
+
+/* TODO: BOX DU CENTRE */
+
+.mainCenter {
+    width: 40%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    margin-top: 65px;
+    padding-bottom: 30px;
+}
+
+
+/* TODO: BOX FIXE DE DROITE */
+
+.asideRight {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F2F5;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.asideRight:hover {
+    overflow: auto;
+}
+
+.suggestionBox {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.suggestionCart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    gap: 10px;
+    /* background-color: yellow; */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.suggestionCart:hover {
+    background-color: #d4d5d6;
+    transition: 0.5s;
+}
+.imgSuggestion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.imgLink {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.suggestionTitle {
+    display: flex;
+    align-items: center;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: fit-content;
+    height: 20px;
+    /* background-color: red; */
+    padding-left: 10px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+}
+
+
+.contactName {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: #000; */
+    font-size: 14px;
+}
+
+.followOrNot {
+    width: 100%;
+    height: fit-content;
+    /* background-color: blue; */
+    display: flex;
+    gap: 5px;
+    /* align-items: center; */
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.followBtn {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0866FF;
+}
+.followBtn:hover {
+    background-color: #0867ffe3;
+}
+
+
+/*  */
+
+@media screen and (max-width: 1000px) {
+    .hideNavMenu {
+        display: none;
+    }
+    .homeMain {
+        justify-content: start;
+        padding-left: 15px;
+    }
+    .mainCenter {
+        width: 70%;
+        /* background-color: red; */
+    }
+    .asideRight {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .asideRight {
+        display: none;
+    }
+    .homeMain {
+        justify-content: center;
+        padding-left: 0;
+    }
+    .mainCenter {
+        width: 80%;
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width: 700px) {
+    .mainCenter {
+        width: 98%;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainCenter {
+        width: 100%;
+        /* background-color: red; */
+    }
+}

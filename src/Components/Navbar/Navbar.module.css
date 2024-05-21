@@ -1,0 +1,657 @@
+.mainNav,
+.mainNavBlack {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    /* border-bottom: 1px solid #b3b0b079; */
+    box-shadow: 0 0 3px 0 #888;
+    background-color: #FFFFFF;
+}
+.mainNavBlack {
+    background-color: #000;
+}
+
+.left {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.left .logo {
+    width: 60px;
+    height: 55px;
+    /* border-radius: 50%; */
+    margin-right: 5px;
+}
+
+.iconSearch {
+    position: absolute;
+    top: 14px;
+    left: 75px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+.input,
+.inputBlack {
+    outline-color: none;
+    width: 260px;
+    height: 45px;
+    border-radius: 50px;
+    padding-left: 35px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    /* background-color: #b5b3b347; */
+    background-color: #F0F2F5;
+    border: none;
+}
+.inputBlack {
+    background-color: #888;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.mainContain {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: 1s;
+}
+
+.containSearchBar,
+.containSearchBarBlack {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 330px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 8px 0;
+    box-shadow: 0 0 10px 0 #888888;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    /* transition: 3s step-end; */
+}
+.containSearchBarBlack {
+    background-color: #000;
+}
+
+.searchBar {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+}
+
+.arrowIcon {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #888;
+}
+
+.arrowIcon:hover {
+    background-color: #F0F2F5;
+}
+
+.iconSearchMain {
+    position: absolute;
+    top: 14px;
+    left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+}
+
+.inputMain,
+.inputMainBlack {
+    outline-color: none;
+    width: 260px;
+    height: 45px;
+    border-radius: 50px;
+    padding-left: 35px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    /* background-color: #b5b3b347; */
+    background-color: #F0F2F5;
+    border: none;
+}
+.inputMainBlack {
+    background-color: #888;
+}
+
+.result {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    /* background-color: orange; */
+}
+
+.iconCiSearch {
+    position: absolute;
+    top: 14px;
+    left: 65px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+}
+
+
+.center {
+    height: 100%;
+    width: fit-content;
+    padding: 0 10px;
+    display: flex;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 5px; */
+}
+
+.center .navLink {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 200px; */
+    margin: 0 10px;
+    padding: 1px 15px;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.navLinks {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 200px; */
+    margin: 0 10px;
+    padding: 1px 15px;
+    transition: 0.5s ease;
+    position: relative;
+    /* background-color: brown; */
+    border-bottom: 3px solid #0866FF;
+}
+
+.navMenu {
+    height: 100%;
+    width: 110px;
+    display: none;
+}
+
+.navMenu2 {
+    height: 100%;
+    width: 110px;
+    display: none;
+}
+
+.spanHome,
+.spanHomeBlack {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.accueil,
+.invitation,
+.notif,
+.discussion,
+.menu {
+    display: none;
+    position: absolute;
+    padding: 3px 10px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #000000ac;
+    box-shadow: 0 0 5px 0 #000;
+    color: #fff;
+    font-weight: 100;
+    font-size: 14px;
+    top: 52px;
+}
+
+.accueil {
+    left: 22px;
+}
+
+.invitation {
+    left: 12px;
+}
+
+.notif {
+    left: 5px;
+}
+
+.discussion {
+    left: 6px;
+}
+
+/* .menu {
+    top
+} */
+
+
+
+.iconsLink {
+    font-size: 25px;
+    width: 80px;
+}
+
+.iconsLinks {
+    font-size: 25px;
+    width: 80px;
+    fill: #0866FF;
+    color: #0866FF;
+}
+
+.spanHome:hover,
+.spanHomeBlack:hover {
+    /* color: #fff; */
+    transition: 0.5s;
+    background-color: #F0F2F5;
+    color: #000;
+    border-radius: 7px;
+    /* font-size: 15px; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+/* .spanHomeBlack:hover {
+    color: #000;
+} */
+
+.center .spanHome:hover .accueil,
+.center .spanHome:hover .invitation,
+.center .spanHome:hover .notif,
+.center .spanHome:hover .discussion,
+.center .spanHome:hover .menu {
+    display: flex;
+}
+
+
+.right {
+    width: fit-content;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* background-color: blue; */
+}
+
+.imgProfil {
+    height: 100%;
+    width: fit-content;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuIcon,
+.menuIconBlack {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e7e8e8;
+    padding: 5px;
+    position: relative;
+    color: #000 ;
+}
+.menuIconBlack {
+    background-color: #888;
+    color: #fff;
+}
+
+.appText {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: -5px;
+    padding: 3px 10px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #000000ac;
+    box-shadow: 0 0 5px 0 #000;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.menuIcon:hover {
+    transition: 0.5s;
+    background-color: #ccced4;
+}
+.menuIconBlack:hover {
+    background-color: #888;
+    color: #fff;
+}
+
+.menuIcon:hover .appText {
+    display: flex;
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.avatarText {
+    display: none;
+    position: absolute;
+    top: 49px;
+    left: -18px;
+    padding: 3px 10px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #000000ac;
+    box-shadow: 0 0 5px 0 #000;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.container:hover .avatarText {
+    display: flex;
+}
+
+.containAccount,
+.containAccountBlack {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    top: 53px;
+    right: 20px;
+    background-color: #ffffff;
+    z-index: 99;
+    padding: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #888;
+}
+.containAccountBlack {
+    background-color: #000;
+}
+
+.logout {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* gap: 10px; */
+    /* background-color: blue; */
+}
+
+.navIcons,
+.navIconsBlack {
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #ccced4;
+}
+.navIconsBlack {
+    background-color: #888;
+}
+
+.containerAccount {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #888;
+    padding: 4px;
+}
+
+.profilAccount,
+.profilAccountBlack {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.profilAccountBlack {
+    background-color: transparent;
+}
+.profilAccount:hover {
+    background-color: #e7e8e8;
+}
+.profilAccountBlack:hover {
+    background-color: #bdb8b8;
+}
+
+.profilAccount p {
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    font-family: cursive;
+}
+
+.firstNavLinks,
+.firstNavLinksBlack {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 90%;
+    height: fit-content;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.firstNavLinks:hover {
+    background-color: #e7e8e8;
+}
+.firstNavLinksBlack:hover {
+    background-color: #e7e8e8;
+}
+
+
+
+/*  */
+
+@media screen and (max-width: 1000px) {
+    .left {
+        position: relative;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .iconSearch {
+        position: sticky;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #e0e1e2;
+        /* color: #050505; */
+    }
+
+    .navMenu {
+        display: flex;
+    }
+
+    .center .navLink {
+        width: 55px;
+        height: 90%;
+        border-radius: 10px;
+    }
+
+    .navLink:hover {
+        background-color: #e0e1e2;
+    }
+
+    .navLinks {
+        width: 55px;
+        /* background-color: brown; */
+        border-bottom: 3px solid #0866FF;
+    }
+
+    .accueil {
+        left: -5px;
+        top: 54px;
+    }
+
+    .invitation {
+        left: -13px;
+    }
+
+    .notif {
+        left: -19px;
+    }
+
+    .discussion {
+        left: -19px;
+    }
+
+    .center .spanHome:hover {
+        background-color: transparent;
+    }
+
+    .center .spanHome:hover .accueil,
+    .center .spanHome:hover .invitation,
+    .center .spanHome:hover .notif,
+    .center .spanHome:hover .discussion,
+    .center .spanHome:hover .menu {
+        display: none;
+    }
+
+    .center .navLink:hover .accueil,
+    .center .navLink:hover .invitation,
+    .center .navLink:hover .notif,
+    .center .navLink:hover .discussion,
+    .center .navLink:hover .menu {
+        display: flex;
+    }
+
+    .center .navLinks:hover .accueil,
+    .center .navLinks:hover .invitation,
+    .center .navLinks:hover .notif,
+    .center .navLinks:hover .discussion,
+    .center .navLinks:hover .menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .navMenu2 {
+        display: flex;
+        height: 90%;
+        width: fit-content;
+        margin-left: 5px;
+        border-radius: 10px;
+        /* background-color: red; */
+    }
+
+    .center {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .containSearchBar {
+        width: 330px;
+        z-index: 99;
+        /* transition: 3s step-end; */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containSearchBar {
+        width: 100%;
+        z-index: 99;
+        border-radius: 0;
+    }
+
+    .iconSearchMain {
+        left: 60px;
+    }
+
+    .inputMain {
+        width: 90%;
+    }
+}

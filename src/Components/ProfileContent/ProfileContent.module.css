@@ -1,0 +1,206 @@
+.main {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.containPost {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: brown; */
+}
+
+.postLeft {
+    width: 43%;
+    height: fit-content;
+    display: flex;
+    margin-top: 23px;
+    /* background-color: peru; */
+}
+
+.containLeft {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 0 #88888876;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.profilName {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blue; */
+    /* margin-bottom: 15px; */
+}
+.containText {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    /* background-color: gray; */
+}
+.bio {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+.textEdited {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    /* background-color: peru; */
+}
+.iconEdit {
+    font-size: 24px;
+    color: #a4a5a5;
+}
+.editMode {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputNameMode {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #888;
+}
+.areaNameMode {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #888;
+}
+.inputNameMode:focus,
+.areaNameMode:focus {
+    border: none;
+    background-color: #F0F2F5;
+}
+
+
+.editableBtn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 5px;
+    margin-top: 15px;
+}
+.infoBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-color: #F0F2F5;
+    border-radius: 8px;
+}
+.infoBtn:hover {
+    background-color: #dededf;
+}
+.cancelBtn {
+    background-color: rgba(222, 23, 23, 0.849);
+    color: #fff;
+}
+.cancelBtn:hover {
+    border-radius: 8px;
+    background-color: rgba(205, 23, 23, 0.977);
+}
+
+.postRight {
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5   px; */
+}
+
+
+/*  */
+
+@media screen and (max-width: 1000px) {
+    .containPost {
+        width: 95%;
+        /* background-color: blue; */
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .containPost {
+        width: 80%;
+        /* background-color: blue; */
+        flex-direction: column;
+    }
+    .postLeft {
+        width: 100%;
+        /* background-color: peru; */
+    }
+    .postRight {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .containPost {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .containPost {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .postLeft {
+        width: 85%;
+        height: fit-content;
+        /* background-color: peru; */
+    }
+}

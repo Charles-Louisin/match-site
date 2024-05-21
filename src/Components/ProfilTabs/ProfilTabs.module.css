@@ -1,0 +1,90 @@
+.main {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    /* padding: 0 20px; */
+    /* padding-bottom: 15px; */
+    /* gap: 20px; */
+    margin-top: 10px;
+    /* background-color: peru; */
+}
+
+.labelTabs {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    /* gap: 5px; */
+    font-size: 16px;
+    /* padding: 10px; */
+    /* color: #000; */
+    transition: 0.5s ease-out;
+    /* background-color: blue; */
+    /* background-color: brown; */
+}
+
+.selectTabs {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: brown; */
+    /* gap: 5px; */
+    font-size: 16px;
+    /* padding: 5px; */
+    /* color: #000; */
+    color: #0866FF;
+    border-bottom: 5px solid #0866FF;
+    transition: 0.5s ease-out;
+}
+
+.iconTabs {
+    font-size: 24px;
+}
+
+.containTabs {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.containTabs:hover {
+    background-color: #F0F2F5;
+}
+
+
+
+/*  */
+
+@media screen and (max-width: 1000px) {
+    .main {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .containTabs {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containTabs {
+        padding: 5px;
+    }
+
+    .labelTabs,
+    .selectTabs {
+        font-size: 14px;
+    }
+
+    .iconTabs {
+        font-size: 18px;
+    }
+}

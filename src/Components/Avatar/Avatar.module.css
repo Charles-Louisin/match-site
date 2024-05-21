@@ -1,0 +1,11 @@
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 3px 0 #888;
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+    width: 40px;
+    height: 40px;
+}

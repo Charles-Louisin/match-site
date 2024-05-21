@@ -1,0 +1,286 @@
+.main {
+    padding-top: 50px;
+    width: 100%;
+    min-height: 140vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: #b3b0b079; */
+}
+
+.upProfil {
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profilBody {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.photoCouverture {
+    width: 75%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: #b3b0b079; */
+}
+
+
+
+.BoxInfoProfil {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    /* padding-left: 25px; */
+    padding-right: 25px;
+    border-bottom: 1px solid #888;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.photoProfil {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    /* background-color: peru; */
+}
+
+.profilName {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aliceblue; */
+    padding: 5px;
+    gap: 10px;
+}
+
+.profilName p {
+    font-size: 32px;
+    line-height: 38px;
+    color: #050505;
+    font-weight: 700;
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.profilName .ville {
+    color: #888;
+}
+
+.otherBtn {
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.otherBtn button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    width: fit-content;
+    height: 35px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.icons {
+    font-size: 18px;
+}
+
+.ajouter {
+    background-color: #e2e3e5;
+    color: #050505;
+    font-weight: bold;
+}
+
+.ajouter:hover {
+    background-color: #d8dadd;
+}
+
+.msgBtn {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(10, 10, 224, 0.806);
+}
+
+.msgBtn:hover {
+    background-color: rgba(7, 7, 180, 0.783);
+}
+
+.infoBtn {
+    background-color: #e2e3e5;
+    color: #050505;
+    font-weight: bold;
+}
+
+.infoBtn:hover {
+    background-color: #d8dadd;
+}
+
+.addComponents {
+    width: 100%;
+    height: fit-content;
+    background-color: #F0F2F5;
+    display: flex;
+    /* flex-direction: column; */
+    /* margin-top: 50px; */
+
+}
+
+.editMode {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputNameMode {
+    width: 300px;
+    height: 55px;
+    padding: 0px 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 2px 0 #888;
+    font-size: 18px;
+    font-family: cursive;
+    background-color: transparent;
+    outline: none;
+}
+
+.inputNameMode:focus {
+    background-color: #f3f4f5;
+    border: none;
+
+}
+
+.editableBtn {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cancelBtn {
+    background-color: rgba(222, 23, 23, 0.849);
+    color: #fff;
+}
+
+.cancelBtn:hover {
+    background-color: rgba(205, 23, 23, 0.977);
+}
+
+
+
+/*  */
+/*  */
+
+@media screen and (max-width: 1000px) {
+    .photoCouverture {
+        width: 100%;
+    }
+
+    .BoxInfoProfil {
+        width: 90%;
+        justify-content: space-between;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .BoxInfoProfil {
+        width: 90%;
+        padding-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .photoProfil {
+        width: 70%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+        flex-direction: column;
+        /* background-color: peru; */
+    }
+
+    .avatarFixed {
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: -90px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* pointer-events: none; */
+        /* background-color: pink; */
+        z-index: 3;
+    }
+
+    .align p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .align p {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .photoCouverture {
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    .photoCouverture {
+        height: 20vh;
+    }
+    .BoxInfoProfil {
+        padding-top: 80px;
+    }
+    .avatarFixed {
+        top: -70px;
+    }
+}

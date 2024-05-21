@@ -1,0 +1,69 @@
+.container,
+.containerBlack {
+    width: 45px;
+    height: 45px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F0F2F5;
+    background-color: #e7e8e8;
+    position: relative;
+}
+.containerBlack {
+    background-color: #888;
+}
+.container:hover {
+    background-color: #E4E6EB;
+    background-color: #ccced4;
+    transition: 0.5s ease;
+}
+.containerBlack:hover {
+    background-color: #c7c4c4;
+}
+.themeText {
+    display: none;
+    position: absolute;
+    top: 61px;
+    left: -8px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #000000ac;
+    box-shadow: 0 0 5px 0 #000;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 14px;
+}
+.container:hover .themeText {
+    display: flex;
+    transform: translateY(-10px);
+    transition: 5s ease;
+}
+
+.bsSun {
+    color: gold;
+    fill: gold;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid gold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.bsMoon {
+    /* color: #888; */
+    /* fill: #000; */
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}

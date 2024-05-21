@@ -1,0 +1,43 @@
+
+.googleAccount {
+    width: 100%;
+    height: fit-content;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+.buttonGoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 0 0 1px 0 #00000068;
+    color: #050505;
+    transition: 0.2s linear;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonGoogle:hover {
+    background-color: #F0F2F5;
+    box-shadow: 0 0 5px 0 #000000a8;
+    transition: 0.3s linear;
+    font-family: cursive;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+}
+.googleLogo {
+    display: flex;
+    width: 40px;
+    height: auto;
+}
+.buttonGoogle:hover .googleLogo {
+    width: 50px;
+}
