@@ -5,6 +5,7 @@ import React from 'react'
 import styles from './GoogleSign.module.css'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
+import { FcGoogle } from 'react-icons/fc';
 
 export default function GoogleSign() {
 
@@ -21,7 +22,7 @@ export default function GoogleSign() {
     <div className={styles.googleAccount}>
       <button onClick={handleSignInWithGoogle} className={styles.buttonGoogle} >
         Se connecter avec
-        <Image className={styles.googleLogo} alt='logo' src='/googleLogo.PNG' width={100} height={100} />
+        <FcGoogle className={styles.googleLogo} />
       </button>
     </div>
   )

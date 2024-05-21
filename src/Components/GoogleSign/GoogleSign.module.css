@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    gap: 5px;
     height: 45px;
     font-size: 16px;
     border: none;
@@ -34,10 +35,8 @@
     text-transform: uppercase;
 }
 .googleLogo {
-    display: flex;
-    width: 40px;
-    height: auto;
+    font-size: 23px;
 }
 .buttonGoogle:hover .googleLogo {
-    width: 50px;
+    font-size: 26px;
 }

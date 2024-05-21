@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import Loading from '../loading/page'
 import Home from '../page'
+import { FcGoogle } from "react-icons/fc";
 
 export default function Login() {
 

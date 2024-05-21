@@ -99,7 +99,7 @@ export default function CreatePost({ onPost }) {
 
                             <div className={styles.addPhoto}>
                                 {uploads.map(upload => (
-                                    <Image src={upload} alt="Image" key={''} width={100} height={100} className={styles.photoAjoute} />
+                                    <Image src={upload} alt="Image" key={upload} width={100} height={100} className={styles.photoAjoute} />
                                 ))}
                             </div>
                         )}

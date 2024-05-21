@@ -52,6 +52,10 @@
 }
 }
 
+.fcGoogleIcon {
+    font-size: 22px;
+}
+
 .textCarossel {
     pointer-events: none;
     display: flex;
