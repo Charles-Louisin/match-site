@@ -11,6 +11,7 @@ import { TbPencilCancel } from 'react-icons/tb'
 import { FaLocationDot } from "react-icons/fa6";
 import { GoHeartFill } from "react-icons/go";
 import { BsCalendar3EventFill } from "react-icons/bs";
+import { BarLoader } from 'react-spinners'
 
 export default function ProfileContent({ active, userId }) {
 
@@ -31,8 +32,20 @@ export default function ProfileContent({ active, userId }) {
             setUser(user)
         }
 
+        fetchPosts();
         getUser();
     }, [])
+
+    function fetchPosts() {
+        supabase.from('posts')
+            .select('id, content, created_at, photos, profiles(id, avatar, name)')
+            .is('parent', null)
+            .order("created_at", { ascending: false })
+            .then(result => {
+                setPosts(result.data)
+            })
+    }
+
     const isMyUser = userId === user?.id
 
     useEffect(() => {
@@ -145,18 +158,18 @@ export default function ProfileContent({ active, userId }) {
                                 {!editMode && (
                                     <div className={styles.containText}>
                                         {profile?.bio && (
-                                            <p className={styles.bio}>{profile?.bio} <br/>
-                                            {isMyUser && (
-                                                <button onClick={() => {
-                                                    setEditMode(true);
-                                                    setBio(profile.bio);
-                                                }}
-                                                    className={styles.infoBtn}
-                                                    type="button">
-                                                    <FaPenToSquare className={styles.icons} />
-                                                    Modifier ma bio
-                                                </button>
-                                            )}
+                                            <p className={styles.bio}>{profile?.bio} <br />
+                                                {isMyUser && (
+                                                    <button onClick={() => {
+                                                        setEditMode(true);
+                                                        setBio(profile.bio);
+                                                    }}
+                                                        className={styles.infoBtn}
+                                                        type="button">
+                                                        <FaPenToSquare className={styles.icons} />
+                                                        Modifier ma bio
+                                                    </button>
+                                                )}
                                             </p>
                                         )}
                                         {!profile?.bio && (
@@ -173,7 +186,7 @@ export default function ProfileContent({ active, userId }) {
                                                         Modifier ma bio
                                                     </button>
                                                 )}
-                                                </p>
+                                            </p>
                                         )}
 
                                         {/* location */}
@@ -199,7 +212,7 @@ export default function ProfileContent({ active, userId }) {
                                         {/* sex */}
 
                                         {profile?.sex && (
-                                            <p className={styles.textEdited}><BsCalendar3EventFill className={styles.iconEdit} />{profile?.sex}</p>
+                                            <p className={styles.textEdited}><BsCalendar3EventFill className={styles.iconEdit} />Né(e) le <strong>{profile?.sex}</strong></p>
                                         )}
                                         {!profile?.sex && (
                                             <p className={styles.textEdited}><BsCalendar3EventFill className={styles.iconEdit} />
@@ -240,7 +253,14 @@ export default function ProfileContent({ active, userId }) {
                         </div>
                     </div>
                     <div className={styles.postRight}>
-                        <CreatePost />
+                        {!profile && (
+                            <div className={styles.loader}>
+                                <BarLoader color='#0866FF' width={500}  />
+                            </div>
+                        )}
+                        {profile && (
+                            <CreatePost onPost={fetchPosts} />
+                        )}
                         {posts?.length > 0 && posts.map(post => (
                             <PostCreated key={post.created_at} {...post} profiles={profile} />
                         ))}

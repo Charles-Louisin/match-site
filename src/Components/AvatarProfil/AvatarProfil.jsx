@@ -37,7 +37,7 @@ export default function AvatarProfil({editable, url, onChange}) {
     }
   return (
     <div className={styles.main}>
-    <Image className={styles.profilAvatar} src={url} alt='Profil' width={50} height={50} />
+    <Image className={styles.profilAvatar} src={url} alt='Profil' width={150} height={150} />
     {isUploading && (
                 <div className={styles.containLoad}>
                     <div className={styles.load}>

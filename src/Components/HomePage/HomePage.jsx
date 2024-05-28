@@ -17,6 +17,7 @@ import Avatar from "@/Components/Avatar/Avatar";
 import { UserContext } from "../Context/UserContext";
 import Layout from "@/Components/layout";
 import NavMenu from '../NavMenu/NavMenu';
+import { BarLoader } from 'react-spinners';
 
 export default function HomePage() {
 
@@ -101,14 +102,23 @@ export default function HomePage() {
 
                         {/* ASIDE LEFT */}
                         <div className={styles.hideNavMenu}>
-                        <NavMenu  />
+                            <NavMenu />
                         </div>
 
                         {/* MAIN */}
                         <div className={styles.mainCenter}>
-                            <CardStory />
 
-                            <CreatePost onPost={fetchPosts} />
+                            {!profile && (
+                                <div className={styles.loader}>
+                                    <BarLoader color='#0866FF' width={500} />
+                                </div>
+                            )}
+                            {profile && (
+                                <>
+                                    <CardStory />
+                                    <CreatePost onPost={fetchPosts} />
+                                </>
+                            )}
                             {posts?.length > 0 && posts.map(post => (
                                 <PostCreated key={post.id} {...post} />
                             ))}
@@ -120,7 +130,7 @@ export default function HomePage() {
 
                             {/* TODO: POUR LES SUGGESTIONS D'AMIS */}
                             <div className={styles.suggestionBox}>
-                                <p className={styles.suggestionTitle}>Utilisateurs recents</p>
+                                <p className={styles.suggestionTitle}>Utilisateurs récents</p>
 
                                 {allUsers.length > 0 && allUsers.map(allUser => (
                                     <>

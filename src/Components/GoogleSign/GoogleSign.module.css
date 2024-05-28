@@ -1,6 +1,7 @@
 
 .googleAccount {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: fit-content;
     /* background-color: blue; */
     display: flex;
@@ -10,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
+    width: 100%;
     gap: 5px;
     height: 45px;
     font-size: 16px;
@@ -27,10 +28,9 @@
 }
 .buttonGoogle:hover {
     background-color: #F0F2F5;
-    box-shadow: 0 0 5px 0 #000000a8;
+    box-shadow: 0 0 5px 0 #88888889;
     transition: 0.3s linear;
-    font-family: cursive;
-    font-size: 14px;
+    font-size: 13px;
     border: none;
     text-transform: uppercase;
 }

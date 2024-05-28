@@ -10,7 +10,7 @@ import { FcGoogle } from 'react-icons/fc';
 export default function GoogleSign() {
 
   const supabase = createClientComponentClient();
-  const router = useRouter()
+  // const router = useRouter()
 
   const handleSignInWithGoogle = async () => {
     await supabase.auth.signInWithOAuth({

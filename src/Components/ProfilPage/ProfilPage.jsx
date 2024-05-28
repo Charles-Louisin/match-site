@@ -22,6 +22,7 @@ import Image from 'next/image'
 import Preloader from '../Preloader/Preloader'
 import { BsCamera } from 'react-icons/bs'
 import Loading from '@/app/loading/page'
+import { uploadUserProfilImage } from '../../../helpers/user'
 
 
 export default function Profil() {
@@ -105,7 +106,7 @@ export default function Profil() {
             )
             setIsUploading(false)
 
-            if (onChange) onChange();
+            if (onchange) onChange();
         }
     }
 

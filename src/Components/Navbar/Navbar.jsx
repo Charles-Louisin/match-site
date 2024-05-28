@@ -30,6 +30,8 @@ export default function Navbar() {
   const { profile } = useContext(UserContext)
   const [show, setShow] = useState(false)
   const [hide, setHide] = useState(false)
+  const [search, setSearch] = useState('')
+  const [allUsers, setAllUsers] = useState([])
 
   const router = useRouter()
   const supabase = createClientComponentClient();
@@ -39,16 +41,26 @@ export default function Navbar() {
     async function getUser() {
       const { data: { user } } = await supabase.auth.getUser()
       setUser(user)
-      // console.log(user);
+
+      fetchUsers();
     }
 
     getUser();
   }, [])
 
+
+  function fetchUsers() {
+    supabase.from('profiles')
+      .select('id, name, avatar')
+      .then(result => {
+        setAllUsers(result.data)
+      })
+  }
+
   const handleSignOut = async () => {
     await supabase.auth.signOut();
-    router.refresh();
     setUser(null)
+    router.refresh();
   }
 
 
@@ -59,7 +71,7 @@ export default function Navbar() {
         <CiSearch onClick={() => setShow(!show)} className={styles.iconSearch} />
         <input className={styles.input} onClick={() => setShow(!show)} type="search" placeholder='Rechercher dans Match...' />
 
-          <div className={styles.navMenu2}>
+        <div className={styles.navMenu2}>
           <Link href={`/menu`} className={styles.navLink} >
             <span className={styles.spanHome}>
               <GrMenu className={styles.iconsLink} />
@@ -76,10 +88,24 @@ export default function Navbar() {
           <div className={styles.containSearchBar}>
             <div className={styles.searchBar}>
               <BsArrowLeft onClick={() => setShow(!show)} className={styles.arrowIcon} />
-              <input className={styles.inputMain} type="search" placeholder='Rechercher dans Match...' />
+              <input value={search} onChange={() => setSearch(e.target.value)} className={styles.inputMain} type="search" placeholder='Rechercher dans Match...' />
               <CiSearch className={styles.iconSearchMain} />
             </div>
-            <div className={styles.result}></div>
+
+            <div className={styles.result}>
+                {/* <div className={styles.suggestionCart}>
+                <div className={styles.followOrNot}>
+                  <div className={styles.imgSuggestion}>
+                    <Link href={''} className={styles.imgLink}>
+                      <Avatar  />
+                    </Link>
+                    <p className={styles.contactName}></p>
+                  </div>
+                  <Link href={'/profil/' + allUser?.id + '/?query=post'} className={styles.followBtn} type="button">Voir le profil</Link>
+                </div>
+              </div> */}
+            </div>
+
           </div>
         </>
       )}

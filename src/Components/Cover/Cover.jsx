@@ -40,7 +40,7 @@ export default function CoverPage({ url, editable, onChange }) {
 
     return (
         <>
-            <Image className={styles.imgCover} src={url} alt='Couverture' width={200} height={200} />
+            <Image className={styles.imgCover} src={url} alt='Couverture' width={250} height={250} />
             {isUploading && (
                 <div className={styles.containLoad}>
                     <div className={styles.load}>

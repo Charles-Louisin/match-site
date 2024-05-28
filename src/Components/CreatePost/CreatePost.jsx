@@ -12,6 +12,8 @@ import Preloader from '../Preloader/Preloader'
 import { FaUserTag } from "react-icons/fa";
 import { FaShare } from "react-icons/fa6";
 import { FaImages } from "react-icons/fa";
+import { BsXLg } from "react-icons/bs";
+import { FadeLoader } from 'react-spinners'
 
 
 export default function CreatePost({ onPost }) {
@@ -67,12 +69,15 @@ export default function CreatePost({ onPost }) {
                     setUploads(prevUploads => [...prevUploads, url]);
 
                 } else {
-                    // console.log(result);
+                    console.log(result);
                 }
             }
             setIsUploading(false)
         }
     }
+
+
+
 
 
 
@@ -90,16 +95,20 @@ export default function CreatePost({ onPost }) {
                                 placeholder={`Quoi de neuf, ${profile?.name} ?`}
                             />
                         </div>
+
                         {isUploading && (
                             <div>
-                                <Preloader />
+                                <FadeLoader color="#0867ffbb" radius={1}  />
                             </div>
                         )}
                         {uploads.length > 0 && (
 
                             <div className={styles.addPhoto}>
                                 {uploads.map(upload => (
-                                    <Image src={upload} alt="Image" key={upload} width={100} height={100} className={styles.photoAjoute} />
+                                    <div className={styles.photoAjouter} key={''}>
+                                        <Image src={upload} alt="Image" key={upload} width={100} height={100} className={styles.photoAjoute} />
+                                        <BsXLg onClick={() => setUploads('')} className={styles.deleteIcon} />
+                                    </div>
                                 ))}
                             </div>
                         )}
@@ -108,15 +117,15 @@ export default function CreatePost({ onPost }) {
                         <div className={styles.partLeft}>
                             <label className={styles.postLink}>
                                 <input type="file" hidden multiple onChange={addPhotos} />
-                                <FaImages className={styles.icons}/>
+                                <FaImages className={styles.icons} />
                                 Image
                             </label>
                             <Link href={''} className={styles.postLink}>
-                                <FaUserTag className={styles.icons}/>
+                                <FaUserTag className={styles.icons} />
                                 Taguer un ami
                             </Link>
                             <Link href={''} className={styles.postLink}>
-                                <FaShare className={styles.icons}/>
+                                <FaShare className={styles.icons} />
                                 Partager
                             </Link>
                         </div>

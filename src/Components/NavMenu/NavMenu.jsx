@@ -57,14 +57,14 @@ export default function NavMenu() {
             </div>
             <div><Link className={styles.firstNavLinks} href={''}><LiaUserFriendsSolid className={styles.navIcons} />Amis</Link></div>
             <div><Link className={styles.firstNavLinks} href={''}><GrGroup className={styles.navIcons} />Groupes</Link></div>
-            <div><Link className={styles.firstNavLinks} href={''}><HiOutlineBuildingStorefront className={styles.navIcons} />Marche</Link></div>
-            <div><Link className={styles.firstNavLinks} href={''}><BsCameraReels className={styles.navIcons} />Reels</Link></div>
+            <div><Link className={styles.firstNavLinks} href={''}><HiOutlineBuildingStorefront className={styles.navIcons} />Marché</Link></div>
+            <div><Link className={styles.firstNavLinks} href={''}><BsCameraReels className={styles.navIcons} />Réels</Link></div>
             <div><Link className={styles.firstNavLinks} href={''}><GoHistory className={styles.navIcons} />Souvenirs</Link></div>
 
             <div><Link className={styles.firstNavLinks} href={''}><BsCalendar4Event className={styles.navIcons} />Evenements</Link></div>
             <div><Link className={styles.firstNavLinks} href={''}><IoGameControllerOutline className={styles.navIcons} />Jeux</Link></div>
             <div><Link className={styles.firstNavLinks} href={''}><GrGallery className={styles.navIcons} />Gallery</Link></div>
-            <div><Link className={styles.firstNavLinks} href={''}><BsCameraVideo className={styles.navIcons} />Videos</Link></div>
+            <div><Link className={styles.firstNavLinks} href={''}><BsCameraVideo className={styles.navIcons} />Vidéos</Link></div>
             <div><Link className={styles.firstNavLinks} href={''}><RiMessage3Line className={styles.navIcons} />Messages</Link></div>
 
             <div><Link className={styles.firstNavLinks} href={''}><GrMoney className={styles.navIcons} />Fonds</Link></div>
